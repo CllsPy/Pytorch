@@ -83,3 +83,36 @@ tensor2 = torch.rand((batch, m, p))
 out_bmm = torch.bmm(tensor1, tensor2)
 print(out_bmm)
 
+print("\n")
+print("\n")
+
+## outras operações
+
+sum_t1 = torch.sum(x, dim=0) # soma uma linha/coluna
+print(sum_t1)
+
+print("\n")
+print("\n")
+
+values, indices = torch.max(x, dim=0) # acha maior valor e sua posição
+print(values, indices)
+
+"""
+abs_x = torch.abs(x)
+
+z = torch.argmax(x, dim=0) => igual max mas retorna apenas o idx
+z = torch.argmin(x, dim=0)
+
+torch.mean(x.float, dim=0)
+
+torch.clamp(x, min=0, max=10) => se for maior que 10, fica 10. se for menor que 0, fica zero.
+"""
+
+z = torch.eq(x, y)
+print(z) # comparação elemento por elemento
+
+print("\n")
+print("\n")
+
+print(y)
+print(torch.sort(y, dim=0, descending=False))
