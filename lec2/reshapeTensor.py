@@ -10,3 +10,13 @@ y = x_33.t()
 x1 = torch.rand((2, 5))
 x2 = torch.rand((2, 5))
 
+print("\n")
+print("\n")
+
+print(x1)
+
+print("\n")
+print("\n")
+
+z = x1.view(-1)
+print(z.shape)
