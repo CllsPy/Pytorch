@@ -27,7 +27,7 @@ device = "cpu"
 input_size = 784
 num_classes = 10
 
-learning_rate = 1e-5
+learning_rate = 0.01 # has impact
 batch_size = 64
 num_epochs = 1
 
